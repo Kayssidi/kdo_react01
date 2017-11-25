@@ -13,10 +13,22 @@ module.exports = {
   entry: {
     app: PATHS.app,
   },
+
+    module: {
+      loaders : [
+                    {
+                        test : /\.js?/,
+                        include : PATHS.app,
+                        loader : 'babel-loader'
+                    }
+                ]
+        },
+    
   output: {
     path: PATHS.build,
     filename: "[name].js",
   },
+    
   plugins: [
     new HtmlWebpackPlugin({
       title: "Webpack demo",

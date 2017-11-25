@@ -1,3 +1,8 @@
-import component from "./component";
+// REACT
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-document.body.appendChild(component());
+ReactDOM.render(
+  <h1>Hello, react!</h1>,
+  document.getElementById('root')
+);
