@@ -6,6 +6,6 @@ import ReactDOM from 'react-dom';
 import MainApp from './component'
 
 ReactDOM.render(
-  <MainApp/>,
+  <MainApp defaultText="..."/>,
   document.getElementById('root')
 );
