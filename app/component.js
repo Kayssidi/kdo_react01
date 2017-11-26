@@ -1,7 +1,19 @@
-export default (text = "Hello world") => {
-  const element = document.createElement("div");
+// REACT
+import React from 'react';
 
-  element.innerHTML = text;
+class MainApp extends React.Component {
 
-  return element;
-};
+    constructor(props) {
+        super(props);
+        this.state = { text: "..." };
+    }
+
+    render() {
+        return ( <div>
+                    <h1>Enter Text here</h1>
+                    <textarea value={this.state.text}/>
+                 </div> )
+             }
+}
+
+export default MainApp;

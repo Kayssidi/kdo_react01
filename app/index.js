@@ -2,7 +2,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+// COMPONENT
+import MainApp from './component'
+
 ReactDOM.render(
-  <h1>Hello, react!</h1>,
+  <MainApp/>,
   document.getElementById('root')
 );
