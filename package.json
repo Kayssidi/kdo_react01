@@ -8,8 +8,8 @@
     "build": "webpack",
     "start": "npm run build && live-server --open=build --port=8080",
     "cordovaInit": "cordova create cordova && pushd cordova && cordova platform add android && cordova platform add browser",
-    "cordovaStart":"pushd cordova && cordova run browser",
-    "cordovaBuild":"pushd cordova && cordova build android"
+    "cordovaStart": "pushd cordova && cordova run browser",
+    "cordovaBuild": "pushd cordova && cordova build android"
   },
   "repository": {
     "type": "git",
